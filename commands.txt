@@ -1,0 +1,50 @@
+kubectl apply -f iac/service.yaml
+kubectl get pods
+kubectl describe pod nodejsapp-deployment-9cd4b6587-lsx4m
+kubectl get deployments
+kubectl get services
+kubectl delete -f iac/
+aks get-credentials --resource-group akspractice --name aks-practice-cluster
+az aks get-credentials --resource-group akspractice --name aks-practice-cluster
+kubectl get nodes
+docker ps
+docker /?
+docker --help
+docker --stop 508229f498af
+docker stop 508229f498af
+docker tag img-nodejs-app janakspractice.azurecr.io/img-nodejs-app
+docker push janakspractice.azurecr.io/img-nodejs-app
+az acr login --name janakspractice.azurecr.io/img-nodejs-app
+docker push janakspractice.azurecr.io/img-nodejs-app
+docker login
+docker push janakspractice.azurecr.io/img-nodejs-app
+az login
+az acr login --name janakspractice.azurecr.io
+docker push janakspractice.azurecr.io/img-nodejs-app
+az acr login --name janakspractice --username janakspractice --password TghNJNEoCew4LIXq/7HQJKJg4GgsIzwF9htTwCXlpk+ACRDdSlPP
+docker push janakspractice.azurecr.io/img-nodejs-app
+kubectl get nodes
+kubectl run pod-nodejs-app janakspractice.azurecr.io/img-nodejs-app
+kubectl run pod-nodejs-app --image janakspractice.azurecr.io/img-nodejs-app
+kubectl get pods
+az role assignment create --assignee aks-svc-user --role acrpull --scope /subscriptions/<subscription_id>/resourceGroups/akspractice/providers/Microsoft.ContainerRegistry/registries/janakspractice
+az role assignment create --assignee aks-svc-user --role acrpull --scope /subscriptions/1c3b39e7-e318-4c4c-9b49-5e1b01646f8a/resourceGroups/akspractice/providers/Microsoft.ContainerRegistry/registries/janakspractice
+az ad sp create-for-rbac --name aks-svc-user --role AcrPull
+az ad sp create-for-rbac --name aks-svc-user --role AcrPull --scopes /subscriptions/1c3b39e7-e318-4c4c-9b49-5e1b01646f8a/resourceGroups/akspractice
+az ad sp create-for-rbac --name aks-svc-user --role AcrPull --scopes /subscriptions/cef71578-7957-4409-97a9-9205fea85d9a/resourceGroups/akspractice
+az role assignment create --assignee aks-svc-user --role acrpull --scope /subscriptions/cef71578-7957-4409-97a9-9205fea85d9a/resourceGroups/akspractice/providers/Microsoft.ContainerRegistry/registries/janakspractice
+az role assignment create --assignee bb19b046-1bc6-4c91-beab-d39a037faf99 --role acrpull --scope /subscriptions/cef71578-7957-4409-97a9-9205fea85d9a/resourceGroups/akspractice/providers/Microsoft.ContainerRegistry/registries/janakspractice
+kubectl run pod-nodejs-app --image janakspractice.azurecr.io/img-nodejs-app
+kubectl delete pod-nodejs-app
+kubectl delete pod pod-nodejs-app
+kubectl run pod-nodejs-app --image janakspractice.azurecr.io/img-nodejs-app
+kubectl get pods
+kubectl delete pod-nodejs-app
+kubectl delete pod pod-nodejs-app
+kubectl run pod-nodejs-app --image janakspractice.azurecr.io/img-nodejs-app
+kubectl get pods
+kubectl get pod pod-nodejs-app
+kubectl get describe pod pod-nodejs-app
+kubectl describe pod pod-nodejs-app
+kubectl delete pod pod-nodejs-app
+doskey /history > commands.txt
